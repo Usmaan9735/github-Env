@@ -10,7 +10,7 @@ jobs:
       - name: Deploy
         run: |
           echo "Test deployment"
-          echo "USERNAME = ${{vars.USERNAME}}"
+          echo "USERNAME = ${{vars.MYUSER}}"
           echo "PASSWORD = ${{secrets.PASSWORD}}"
           
   DEVELOPMENT:
@@ -20,7 +20,7 @@ jobs:
       - name: Deploy
         run: |
           echo "Deployed to DEV"
-          echo "USERNAME = ${{vars.USERNAME}}"
+          echo "USERNAME = ${{vars.MYUSER}}"
           echo "PASSWORD = ${{secrets.PASSWORD}}"
 
   STAGING:
@@ -32,7 +32,7 @@ jobs:
       - name: Deploy
         run: |
           echo "Deployed to Stage"      
-          echo "USERNAME = ${{vars.USERNAME}}"
+          echo "USERNAME = ${{vars.MYUSER}}"
           echo "PASSWORD = ${{secrets.PASSWORD}}"
           
   PRODUCTION:
